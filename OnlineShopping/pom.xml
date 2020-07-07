@@ -13,6 +13,11 @@
 	<name>OnlineShopping Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
+	
+	<properties>
+	<javaee.api>7.0</javaee.api>
+	<spring.mvc>4.3.6.RELEASE</spring.mvc>
+	</properties>
 
 
 	<dependencies>
@@ -27,7 +32,7 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>7.0</version>
+			<version>${javaee.api}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -35,7 +40,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>4.3.6.RELEASE</version>
+			<version>${spring.mvc}</version>
 		</dependency>
 		
 		<dependency>
