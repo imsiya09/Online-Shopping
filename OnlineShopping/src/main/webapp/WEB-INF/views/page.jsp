@@ -40,33 +40,41 @@
 
 <body>
 
-     <div class="wrapper">
-	<!-- Navigation PAge -->
-	<%@include file="./shared/navbar.jsp"%>
+	<div class="wrapper">
+		<!-- Navigation PAge -->
+		<%@include file="./shared/navbar.jsp"%>
 
-     <!-- --page content -->
-     <div class="content">
-	<!-- Loading home page here -->
-	<c:if test="${userClickHome == true}">
-		<%@include file="home.jsp"%>
-	</c:if>
-	<c:if test="${userClickAbout== true}">
-		<%@include file="about.jsp"%>
-	</c:if>
-	<c:if test="${userClickContact == true}">
-		<%@include file="contact.jsp"%>
-	</c:if>
-	</div>
+		<!-- --page content -->
+		<div class="content">
 
-	<!-- Footer -->
-	<%@include file="./shared/footer.jsp"%>
+			<!-- Loading home page here -->
+			<c:if test="${userClickHome == true}">
+				<%@include file="home.jsp"%>
+			</c:if>
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="${js}/jquery.min.js"></script>
-	<script src="${js}/bootstrap.bundle.min.js"></script>
+			<!-- Loading about page here -->
+			<c:if test="${userClickAbout== true}">
+				<%@include file="about.jsp"%>
+			</c:if>
 
-	<!-- self coded javaScript-->
-	<script src="${js}/myapp.js"></script>
+			<!-- Loading contact page here -->
+			<c:if test="${userClickContact == true}">
+				<%@include file="contact.jsp"%>
+			</c:if>
+		</div>
+
+		<!-- Footer -->
+		<%@include file="./shared/footer.jsp"%>
+
+		<!-- Jquery code JavaScript -->
+		<script src="${js}/jquery.min.js"></script>
+		
+		<!-- Bootstrap core JavaScript -->
+		<script src="${js}/bootstrap.bundle.min.js"></script>
+
+		<!-- self coded javaScript-->
+		<script src="${js}/myapp.js"></script>
+		
 	</div>
 </body>
 

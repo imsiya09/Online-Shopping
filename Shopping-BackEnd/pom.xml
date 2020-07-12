@@ -13,6 +13,10 @@
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
+	<properties>
+		<spring.context>4.3.6.RELEASE</spring.context>
+	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -21,6 +25,13 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.context}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
