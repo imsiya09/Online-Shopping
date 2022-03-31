@@ -16,7 +16,7 @@
 
 	<properties>
 		<javaee.api>7.0</javaee.api>
-		<spring.mvc>4.3.6.RELEASE</spring.mvc>
+		<spring.mvc>5.3.18</spring.mvc>
 	</properties>
 
 
